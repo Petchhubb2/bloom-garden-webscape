@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -106,8 +105,8 @@ export default {
 					'0%, 100%': { transform: 'rotate(-3deg)' },
 					'50%': { transform: 'rotate(3deg)' }
 				},
-				'petal-fall': {
-					'0%': { transform: 'translateY(-10vh) rotate(0deg)', opacity: '0' },
+				'heart-fall': {
+					'0%': { transform: 'translateY(-10vh) rotate(-45deg)', opacity: '0' },
 					'10%': { opacity: '1' },
 					'100%': { transform: 'translateY(100vh) rotate(720deg)', opacity: '0' }
 				}
@@ -118,7 +117,6 @@ export default {
 				'fade-in': 'fade-in 1s ease-out forwards',
 				'float': 'float 6s ease-in-out infinite',
 				'sway': 'sway 6s ease-in-out infinite',
-				'petal-fall': 'petal-fall 10s linear infinite'
 			},
 			fontFamily: {
 				'serif': ['Playfair Display', 'Georgia', 'serif'],
