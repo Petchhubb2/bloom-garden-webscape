@@ -48,7 +48,7 @@ const Index = () => {
                   <Heart />
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Beautiful Hearts</h3>
-                <p className="text-sm">Experience the beauty and tranquility of our garden sanctuary.</p>
+                <p className="text-sm">อิ้งค์เป็น คนที่น่ารักและนิสัยดีมาก อยู่ด้วยละไม่เหงาเลย</p>
               </div>
             ))}
           </div>
