@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -96,6 +99,86 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-serif;
   }
+  
+  html, body, #root {
+    height: 100%;
+    overflow-x: hidden;
+  }
+}
+
+.petal {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #FFDEE2;
+  border-radius: 20px 0;
+  opacity: 0.8;
+}
+
+.floral-gradient {
+  background: linear-gradient(135deg, #FFDEE2 0%, #E5DEFF 50%, #F2FCE2 100%);
+}
+
+/* Flower base styles */
+.flower {
+  position: relative;
+  width: 60px;
+  height: 60px;
+}
+
+.flower .center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #FEC6A1;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.flower .petal {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: #FFDEE2;
+  border-radius: 30px 0;
+  top: 50%;
+  left: 50%;
+  transform-origin: 0 0;
+}
+
+.flower .petal:nth-child(1) {
+  transform: rotate(0deg) translate(-50%, -50%);
+}
+
+.flower .petal:nth-child(2) {
+  transform: rotate(45deg) translate(-50%, -50%);
+}
+
+.flower .petal:nth-child(3) {
+  transform: rotate(90deg) translate(-50%, -50%);
+}
+
+.flower .petal:nth-child(4) {
+  transform: rotate(135deg) translate(-50%, -50%);
+}
+
+.flower .petal:nth-child(5) {
+  transform: rotate(180deg) translate(-50%, -50%);
+}
+
+.flower .petal:nth-child(6) {
+  transform: rotate(225deg) translate(-50%, -50%);
+}
+
+.flower .petal:nth-child(7) {
+  transform: rotate(270deg) translate(-50%, -50%);
+}
+
+.flower .petal:nth-child(8) {
+  transform: rotate(315deg) translate(-50%, -50%);
 }
