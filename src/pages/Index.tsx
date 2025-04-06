@@ -3,8 +3,13 @@ import React from 'react';
 import BackgroundGradient from '../components/BackgroundGradient';
 import HeartAnimation from '../components/HeartAnimation';
 import Heart from '../components/Heart';
+import Clock from '../components/Clock';
 
 const Index = () => {
+  // Set the date when you first met - for example: 2022, 3, 15 represents April 15, 2022
+  // Note: month is 0-indexed (0 = January, 11 = December)
+  const meetingDate = new Date(2022, 3, 15); // Change this date to when you first met
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden text-floral-deepGreen">
       <BackgroundGradient />
@@ -24,22 +29,20 @@ const Index = () => {
         
         {/* Main Content */}
         <div className="flex-1 flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in opacity-0" style={{
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-in opacity-0" style={{
             animationDelay: '0.5s'
           }}>
-            Welcome to <span className="text-transparent bg-clip-text bg-gradient-to-r from-floral-pink to-floral-lavender">Blossom Garden</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-floral-pink to-floral-lavender">นาฬิกา แสดงเวลาที่รู้จักกัน</span>
           </h1>
           
-          <div className="flex justify-center mb-12">
-            <div className="animate-float-heart scale-150">
-              <Heart scale={1.5} />
-            </div>
+          <div className="animate-fade-in opacity-0 mb-12" style={{ animationDelay: '0.8s' }}>
+            <Clock startDate={meetingDate} />
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl mx-auto mb-12">
             {[1, 2, 3].map(i => (
               <div key={i} className="bg-white bg-opacity-50 backdrop-blur-sm p-6 rounded-2xl shadow-lg animate-fade-in opacity-0" style={{
-                animationDelay: `${0.8 + i * 0.2}s`
+                animationDelay: `${1.2 + i * 0.2}s`
               }}>
                 <div className="flex justify-center mb-4">
                   <Heart />
