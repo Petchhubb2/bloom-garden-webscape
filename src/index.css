@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 @tailwind base;
@@ -163,4 +164,13 @@
 @keyframes sway-heart {
   0%, 100% { transform: rotate(-48deg); }
   50% { transform: rotate(-42deg); }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(-45deg); }
+  50% { transform: translateY(-5px) rotate(-45deg); }
 }
