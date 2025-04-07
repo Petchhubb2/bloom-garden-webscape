@@ -32,7 +32,7 @@ const Index = () => {
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-in opacity-0" style={{
             animationDelay: '0.5s'
           }}>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-floral-pink to-floral-lavender">นาฬิกา แสดงเวลาที่รู้จักกัน</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-floral-pink to-floral-lavender">รู้จักันเป็นเวลา</span>
           </h1>
           
           <div className="animate-fade-in opacity-0 mb-12" style={{ animationDelay: '0.8s' }}>
