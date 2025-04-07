@@ -6,9 +6,9 @@ import Heart from '../components/Heart';
 import Clock from '../components/Clock';
 
 const Index = () => {
-  // Set the date when you first met - for example: 2022, 3, 15 represents April 15, 2022
+  // Set the date to January 31, 2025 (31/1/2568 in Thai Buddhist calendar)
   // Note: month is 0-indexed (0 = January, 11 = December)
-  const meetingDate = new Date(2022, 3, 15); // Change this date to when you first met
+  const meetingDate = new Date(2025, 0, 31); // January 31, 2025
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center relative overflow-hidden text-floral-deepGreen">
