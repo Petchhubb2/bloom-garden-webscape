@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -109,6 +110,14 @@ export default {
 					'0%': { transform: 'translateY(-10vh) rotate(-45deg)', opacity: '0' },
 					'10%': { opacity: '1' },
 					'100%': { transform: 'translateY(100vh) rotate(720deg)', opacity: '0' }
+				},
+				'pulse': {
+					'0%, 100%': { opacity: '1', transform: 'scale(1)' },
+					'50%': { opacity: '0.85', transform: 'scale(0.98)' }
+				},
+				'bounce': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
 				}
 			},
 			animation: {
@@ -117,6 +126,9 @@ export default {
 				'fade-in': 'fade-in 1s ease-out forwards',
 				'float': 'float 6s ease-in-out infinite',
 				'sway': 'sway 6s ease-in-out infinite',
+				'sway-heart': 'sway-heart 6s ease-in-out infinite',
+				'pulse': 'pulse 3s ease-in-out infinite',
+				'bounce': 'bounce 2s ease-in-out infinite',
 			},
 			fontFamily: {
 				'serif': ['Playfair Display', 'Georgia', 'serif'],

@@ -1,8 +1,10 @@
+
 import React from 'react';
 import BackgroundGradient from '../components/BackgroundGradient';
 import HeartAnimation from '../components/HeartAnimation';
 import Heart from '../components/Heart';
 import Clock from '../components/Clock';
+
 const Index = () => {
   // Set the date to January 31, 2025 (31/1/2568 in Thai Buddhist calendar)
   // Note: month is 0-indexed (0 = January, 11 = December)
@@ -26,10 +28,12 @@ const Index = () => {
         
         {/* Main Content */}
         <div className="flex-1 flex flex-col items-center justify-center text-center max-w-3xl mx-auto">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-fade-in opacity-0" style={{
-          animationDelay: '0.5s'
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 animate-pulse" style={{
+          animationDuration: '3s'
         }}>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 drop-shadow-lg">รู้จักกันเป็นเวลา</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-500 drop-shadow-lg inline-block animate-bounce" style={{
+            animationDuration: '2s'
+          }}>รู้จักกันเป็นเวลา</span>
           </h1>
           
           <div className="animate-fade-in opacity-0 mb-12" style={{
@@ -60,4 +64,5 @@ const Index = () => {
       </div>
     </div>;
 };
+
 export default Index;
